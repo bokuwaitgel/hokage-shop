@@ -31,7 +31,7 @@ services:
     environment:
       - DEBUG=0
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/ecommerce
-      - REDIS_URL=redis://redis:6379/0
+      - REDIS_URL=redis://redis:6378/0
     networks:
       - app-network
 

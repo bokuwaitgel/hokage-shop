@@ -15,7 +15,7 @@ services:
   redis:
     image: redis:7-alpine
     ports:
-      - "6379:6379"
+      - "6378:6379"
 
   backend:
     build: ./backend
@@ -31,7 +31,7 @@ services:
     environment:
       - DEBUG=1
       - DATABASE_URL=postgresql://postgres:postgres@db:5432/ecommerce
-      - REDIS_URL=redis://redis:6379/0
+      - REDIS_URL=redis://redis:6378/0
 
   frontend:
     build: ./frontend

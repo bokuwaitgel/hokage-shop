@@ -86,7 +86,7 @@ DB_USER=postgres
 DB_PASSWORD=postgres
 DB_HOST=db
 DB_PORT=5432
-REDIS_URL=redis://redis:6379/0
+REDIS_URL=redis://redis:6378/0
 ```
 
 ### Default Admin User
